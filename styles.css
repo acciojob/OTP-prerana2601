@@ -1,1 +1,64 @@
 /*  your css code here. If applicable */
+/* Basic styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the OTP input */
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* Heading and subheading */
+#verification_heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#verification_subtext {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Styling for the OTP input container */
+.code-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Styling for individual OTP inputs */
+.code {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Focus state for the input fields */
+.code:focus {
+    border-color: #007BFF;
+}
+
+/* Prevent input fields from resizing */
+input[type="text"] {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
